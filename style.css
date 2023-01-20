@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
 }
-
+/*
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -12,7 +12,22 @@
     }
     
     .fond { grid-area: 1 / 1 / 6 / 6; }
-        .fond {display: flex;}
+         .fond {display: flex;
+                width: auto;
+                height: 200px;
+                POSITION: fixed;
+                margin: auto;
+        }
+        
     .logo { grid-area: 1 / 2 / 2 / 3; }
     .baniere { grid-area: 2 / 2 / 3 / 5; } 
         
+*/
+
+
+body{
+    background-image: url("../voitureluxe/fond\ site/.fond");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+   
