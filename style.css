@@ -15,5 +15,4 @@
         
     .logo { grid-area: 1 / 2 / 2 / 3; }
     .baniere { grid-area: 2 / 2 / 3 / 5; } 
-        .baniere {weight: 80px;
-                background-color: blue;}
+        
