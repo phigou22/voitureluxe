@@ -9,14 +9,13 @@ body{
     background-image: url("./fond.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
-    z-index: -1;
+    filter: grayscale(75%);
+  
   
 
 }
- header{
-    background-color: aquamarine;
- }  
+
+   
 
 .logo {
     width: auto;
