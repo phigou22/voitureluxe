@@ -6,8 +6,31 @@
 
 
 body{
-   background-image: url("./fond.jpg");
+    background-image: url("./fond.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+  
+
 }
-   
+ header{
+    background-color: aquamarine;
+ }  
+
+.logo {
+    width: auto;
+    top: 50%;
+    height: 35vh;
+    display: flex;
+    margin-left: 20vh;
+
+}
+
+h1 { font-size: 50px;
+    right: 10%;
+    POSITION: relative;
+    LEFT: 250px;
+    margin-top: 75px;
+    color: aliceblue;
+}
