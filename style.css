@@ -14,6 +14,22 @@ body{
   
 
 }
+h2{
+    padding: 50%;
+}
+
+
+   
+
+.baniere{
+    
+    background-color: blue;
+    
+    width: auto;
+    margin: 100px;
+    padding: 1%;
+    
+}
 
    
 
@@ -33,3 +49,6 @@ h1 { font-size: 50px;
     margin-top: 75px;
     color: aliceblue;
 }
+
+
+    
