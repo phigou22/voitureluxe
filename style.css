@@ -11,44 +11,74 @@ body{
     background-size: cover;
     filter: grayscale(75%);
   
-  
-
 }
-h2{
-    padding: 50%;
-}
-
-
-   
-
-.baniere{
-    
-    background-color: blue;
-    
-    width: auto;
-    margin: 100px;
-    padding: 1%;
-    
-}
-
-   
 
 .logo {
-    width: auto;
-    top: 50%;
-    height: 35vh;
-    display: flex;
-    margin-left: 20vh;
 
+    height: 45vh;
+    display: flex;
+    margin-left: 25vh;
+    
+ 
 }
 
 h1 { font-size: 50px;
     right: 10%;
     POSITION: relative;
-    LEFT: 250px;
-    margin-top: 75px;
+    LEFT: 200px;
+    margin-top: 10%;
     color: aliceblue;
 }
-
-
+  
     
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .baniere { grid-area: 2 / 2 / 3 / 5;}
+        .baniere{
+
+            background-color: blue;
+            width: auto;
+            height: 100px;
+            display: flex;
+            
+            
+         }
+        
+         .parent {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            }
+
+            .acueil { grid-area: 2 / 3 / 3 / 4; }
+            .nos vehicules { grid-area: 2 / 4 / 3 / 5; }
+            .nous contacter { grid-area: 2 / 2 / 3 / 3; }
+                    .acueil{
+
+                       margin: 30px;
+                    }
+
+
+                    
+                    .parent {
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        grid-template-rows: repeat(12, 1fr);
+                        grid-column-gap: 0px;
+                        grid-row-gap: 0px;
+                        }
+                        
+                        .texte { grid-area: 3 / 2 / 6 / 5; }
+                            .texte{
+                                margin-top: 0%;
+                                background-color: antiquewhite;
+                            }
+                    
