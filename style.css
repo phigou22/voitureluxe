@@ -135,13 +135,18 @@ h2 {
                 box-align: center;
             }
     .accueil { grid-area: 1 / 3 / 2 / 4; }
+            .accueil{
+                color: white;
+                margin: 50px;
+                box-align: center;
+            }
 
     .coordonée { grid-area: 1 / 5 / 2 / 6; }
         .coordonée {
             
                 box-align: center;
                 color: white;
-                margin-left: 900px;
+                margin-left: 300px;
                 
             
         }
