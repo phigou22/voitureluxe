@@ -13,6 +13,73 @@ body{
   
 }
 
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;}
+    
+ .logo { grid-area: 2 / 2 / 3 / 3; }
+        
+            .logo{
+                width: auto;
+                height: 25vh;
+                display: flex;
+                margin-left: 25vh;
+                position: relative;  
+            }
+
+ 
+   
+ 
+
+    .titre {grid-area: 3 / 2 / 4 / 5;}
+        .titre{
+
+            font-size: 30px;
+            right: 10%;
+            POSITION: relative;
+            LEFT: 50px;
+            margin-top: 10%;
+            color: aliceblue;
+        }
+
+
+
+    .baniere   { grid-area: 5 / 2 / 6 / 5; }
+        .baniere{
+            width: auto;
+            background-color: blue;
+            height: 150px;
+            display: flex;
+            
+        }
+
+
+    .texte { grid-area: 4 / 2 / 6 / 5; }
+        .texte{
+
+            margin-top: 5%;
+            background-color: antiquewhite;
+            margin: 10%;
+        }
+
+
+    .photo { grid-area: 8 / 4 / 11 / 5; }
+            .photo{
+                margin-left: 72%;
+             
+            }
+
+            .texte2{
+
+                margin-right: 10px;
+            }
+
+
+
+/*
 .logo {
 
     height: 45vh;
@@ -81,4 +148,4 @@ h1 { font-size: 50px;
                                 margin-top: 0%;
                                 background-color: antiquewhite;
                             }
-                    
+                    */
