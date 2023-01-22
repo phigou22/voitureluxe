@@ -8,9 +8,16 @@
 body{
     background-image: url("./fond.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     filter: grayscale(75%);
-  
+    
+    
+}
+
+header{ 
+
+    display: flex;
+    height: 400px;
 }
 
 .parent {
@@ -19,15 +26,15 @@ body{
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 0px;}
-    
+ 
  .logo { grid-area: 2 / 2 / 3 / 3; }
         
             .logo{
                 width: auto;
-                height: 25vh;
+                height: 200px;
                 display: flex;
-                margin-left: 25vh;
-                position: relative;  
+               
+                position: relative ;  
             }
 
  
@@ -38,9 +45,9 @@ body{
         .titre{
 
             font-size: 30px;
-            right: 10%;
+            right: 50%;
             POSITION: relative;
-            LEFT: 50px;
+            LEFT: 50%;
             margin-top: 10%;
             color: aliceblue;
         }
@@ -50,11 +57,14 @@ body{
     .baniere   { grid-area: 5 / 2 / 6 / 5; }
         .baniere{
             width: auto;
-            background-color: blue;
-            height: 150px;
+            background-color: rgb(150, 136, 16);
+            height: 75px;
             display: flex;
-            
+            margin-top: 10vh;
+            margin: 7%;
+            border-radius: 10px;
         }
+    
 
 
     .texte { grid-area: 4 / 2 / 6 / 5; }
@@ -68,7 +78,7 @@ body{
 
     .photo { grid-area: 8 / 4 / 11 / 5; }
             .photo{
-                margin-left: 72%;
+                margin-right: 72%;
              
             }
 
@@ -78,7 +88,29 @@ body{
             }
 
 
+footer{
+    background-color: black;
+    height: 300px;
+}
+button{
+    width: auto;
+    background-color: blue;
+    height: 20px;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 30px;
+    border-radius: 10px;
+    align:center;
+    
 
+}
+button:hover{
+    background-color: blanchedalmond;
+}
+h2 {
+    margin-top: 60px;
+    
+}
 /*
 .logo {
 
