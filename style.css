@@ -31,8 +31,9 @@ header{
         
             .logo{
                 width: auto;
-                height: 200px;
+                height: 250px;
                 display: flex;
+                margin-top: 80px;
                
                 position: relative ;  
             }
@@ -45,9 +46,9 @@ header{
         .titre{
 
             font-size: 30px;
-            right: 50%;
+            right: 35%;
             POSITION: relative;
-            LEFT: 50%;
+            LEFT: 30%;
             margin-top: 10%;
             color: aliceblue;
         }
@@ -57,11 +58,11 @@ header{
     .baniere   { grid-area: 5 / 2 / 6 / 5; }
         .baniere{
             width: auto;
-            background-color: rgb(150, 136, 16);
+            background-color: #ddaa00;
             height: 75px;
             display: flex;
-            margin-top: 10vh;
-            margin: 7%;
+            margin-top: 5vh;
+            margin: 10%;
             border-radius: 10px;
         }
     
@@ -71,7 +72,7 @@ header{
         .texte{
 
             margin-top: 5%;
-            background-color: antiquewhite;
+            background-color: rgb(78, 53, 20);
             margin: 10%;
         }
 
@@ -88,96 +89,59 @@ header{
             }
 
 
-footer{
-    background-color: black;
-    height: 300px;
-}
 button{
     width: auto;
-    background-color: blue;
+    background-color: rgb(102, 189, 31);
     height: 20px;
     margin-top: 30px;
     margin-right: 50px;
     margin-left: 30px;
     border-radius: 10px;
-    align:center;
+    box-align:center;
     
 
 }
 button:hover{
-    background-color: blanchedalmond;
+    background-color: rgb(167, 108, 21);
 }
 h2 {
     margin-top: 60px;
     
 }
-/*
-.logo {
 
-    height: 45vh;
-    display: flex;
-    margin-left: 25vh;
-    
- 
-}
 
-h1 { font-size: 50px;
-    right: 10%;
-    POSITION: relative;
-    LEFT: 200px;
-    margin-top: 10%;
-    color: aliceblue;
-}
-  
+
+
     
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
     
-    .baniere { grid-area: 2 / 2 / 3 / 5;}
-        .baniere{
-
-            background-color: blue;
-            width: auto;
-            height: 100px;
-            display: flex;
-            
-            
-         }
-        
-         .parent {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
+    .footer { grid-area: 1 / 1 / 2 / 6; }
+        .footer{
+            background-color: black;
+            height: 300px;
+            margin-top: 400px;
+            margin: 0px;
+        }
+    .mention { grid-area: 1 / 1 / 2 / 2; }
+            .mention{
+                color: white;
+                margin: 50px;
+                box-align: center;
             }
+    .accueil { grid-area: 1 / 3 / 2 / 4; }
 
-            .acueil { grid-area: 2 / 3 / 3 / 4; }
-            .nos vehicules { grid-area: 2 / 4 / 3 / 5; }
-            .nous contacter { grid-area: 2 / 2 / 3 / 3; }
-                    .acueil{
-
-                       margin: 30px;
-                    }
-
-
-                    
-                    .parent {
-                        display: grid;
-                        grid-template-columns: repeat(5, 1fr);
-                        grid-template-rows: repeat(12, 1fr);
-                        grid-column-gap: 0px;
-                        grid-row-gap: 0px;
-                        }
-                        
-                        .texte { grid-area: 3 / 2 / 6 / 5; }
-                            .texte{
-                                margin-top: 0%;
-                                background-color: antiquewhite;
-                            }
-                    */
+    .coordonée { grid-area: 1 / 5 / 2 / 6; }
+        .coordonée {
+            
+                box-align: center;
+                color: white;
+                margin-left: 900px;
+                
+            
+        }
