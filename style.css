@@ -9,7 +9,7 @@ body{
     background-image: url("./fond.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    filter: grayscale(75%);
+    background-color: black;
     
     
 }
@@ -34,7 +34,6 @@ header{
                 height: 250px;
                 display: flex;
                 margin-top: 80px;
-               
                 position: relative ;  
             }
 
@@ -44,13 +43,14 @@ header{
 
     .titre {grid-area: 3 / 2 / 4 / 5;}
         .titre{
-
-            font-size: 30px;
-            right: 35%;
+           
+            font-size: 40px;
+            right: 30%;
             POSITION: relative;
             LEFT: 30%;
             margin-top: 10%;
             color: aliceblue;
+            font-family: 'Tangerine', cursive;
         }
 
 
@@ -58,28 +58,87 @@ header{
     .baniere   { grid-area: 5 / 2 / 6 / 5; }
         .baniere{
             width: auto;
-            background-color: #ddaa00;
+            background-color: #927410;
             height: 75px;
             display: flex;
             margin-top: 5vh;
-            margin: 10%;
+            padding-left: auto;
             border-radius: 10px;
         }
     
+       
+          
+          img {
+            max-width: 100%;
+          }
+          .slider-container {
+            max-width: 780px;
+            position:relative;
+            margin:auto;
+            height: 350px;
+            overflow: hidden;
+            margin-top: 75px;
+            
+
+          }
+          .menu {
+            position: absolute;
+            left: 0;
+            z-index: 11;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+          }
+          .menu label {
+            cursor: pointer;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #ccc;
+            border-radius: 50px;
+            margin: 0 0.2em 1em;
+          }
+          .menu label:hover,.menu label:focus {
+            background: #1C87C9;
+          }
+          .slide-input{
+            opacity: 0;
+          }
+          .slide-img {
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            z-index: 10;
+            transition: left 0s 0.75s;
+          }
+          [id^="slide"]:checked + .slide-img {
+            left: 0;
+            z-index: 100;
+            transition: left 0.65s ease-out;
+          }
 
 
     .texte { grid-area: 4 / 2 / 6 / 5; }
         .texte{
 
-            margin-top: 5%;
+            margin-top: 0;
             background-color: rgb(78, 53, 20);
             margin: 10%;
         }
 
+ .main{
+        margin-top: 0;
+        padding-right: 800px;
+        margin-left: 10px;
+    }
 
     .photo { grid-area: 8 / 4 / 11 / 5; }
             .photo{
-                margin-right: 72%;
+                margin-left: 72%;
+                justify-content: space-around;
+
              
             }
 
@@ -87,18 +146,16 @@ header{
 
                 margin-right: 10px;
             }
-
+   
 
 button{
     width: auto;
-    background-color: rgb(102, 189, 31);
+    background-color: rgb(10, 228, 10);
     height: 20px;
-    margin-top: 30px;
-    margin-right: 50px;
-    margin-left: 30px;
     border-radius: 10px;
-    box-align:center;
-    
+    justify-content:center;
+    align-items: center;
+    justify-content: space-around;
 
 }
 button:hover{
@@ -140,6 +197,9 @@ h2 {
                 margin: 50px;
                 box-align: center;
             }
+
+
+        
 
     .coordonée { grid-area: 1 / 5 / 2 / 6; }
         .coordonée {
