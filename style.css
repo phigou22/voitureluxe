@@ -125,7 +125,7 @@ header{
 
             margin-top: 0;
             background-color: rgb(78, 53, 20);
-            margin: 10%;
+            
         }
 
  .main{
@@ -178,13 +178,7 @@ h2 {
     grid-row-gap: 0px;
     }
     
-    .footer { grid-area: 1 / 1 / 2 / 6; }
-        .footer{
-            background-color: black;
-            height: 300px;
-            margin-top: 400px;
-            margin: 0px;
-        }
+    
     .mention { grid-area: 1 / 1 / 2 / 2; }
             .mention{
                 color: white;
@@ -210,3 +204,79 @@ h2 {
                 
             
         }
+
+.galerie{
+
+    display: flex;
+    height: 150px;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 6px;
+    }
+    
+    .div1 { grid-area: 3 / 2 / 4 / 10; }
+    .div2 { grid-area: 5 / 2 / 7 / 4; }
+        .div2{
+            display: flex;
+            height: 150px;
+        }
+    .div3 { grid-area: 7 / 2 / 9 / 4; } 
+        .div3{
+            display: flex;
+            height: 150px;
+        }
+    .div4 { grid-area: 9 / 2 / 11 / 4; }
+        .div4{
+            display: flex;
+            height: 150px;
+        }
+    .div5 { grid-area: 5 / 5 / 7 / 7; }
+         .div5{
+            display: flex;
+            height: 150px;
+        }
+    .div6 { grid-area: 5 / 8 / 7 / 10; }
+        .div6{
+            display: flex;
+            height: 150px;
+        }
+    .div7 { grid-area: 7 / 5 / 9 / 7; }
+        .div7{
+            display: flex;
+            height: 150px;
+        }
+    .div8 { grid-area: 9 / 5 / 11 / 7; }
+        .div8{
+            display: flex;
+            height: 150px;
+        }
+    .div9 { grid-area: 7 / 8 / 9 / 10; }
+        .div9{
+            display: flex;
+            height: 150px;
+        }
+    .div10 { grid-area: 9 / 8 / 11 / 10; }
+    .div11 { grid-area: 1 / 2 / 3 / 4; }
+    .div12 { grid-area: 2 / 6 / 3 / 9; }
+    .div13 { grid-area: 11 / 1 / 13 / 11; }
+       .div13{
+            background-color: black;
+            height: 300px;
+            margin-top: 400px;
+            margin: 0px;
+        }
+    
+       
+    
+        
+   
+        
+    
+        
+    
