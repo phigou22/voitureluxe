@@ -9,8 +9,18 @@ body{
     background-image: url("./fond.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-color: black;
-    
+    background-color: black;  
+}
+
+
+
+p{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
     
 }
 
@@ -43,7 +53,7 @@ body{
             height: 85px;
             display: flex;
             border-radius: 10px;
-            margin-top: -80px;
+            margin-top: -90px;
 
         }
        
@@ -56,7 +66,7 @@ body{
         margin:auto;
         height: 350px;
         overflow: hidden;
-        margin-top: -1200px;
+        margin-top: -1150px;
         display: flex;
 
         }
@@ -100,13 +110,14 @@ body{
 
 
     .photo1 { grid-area: 8 / 2 / 9 / 3; }
-        .div5 img{
+        .photo1 img{
             width: auto;
             display: flex;
             height: 150px;
             justify-content: center;
             align-items: center;
             margin-left: 520px;
+            margin-top: 90px;
             
         }
     .photo2 { grid-area: 8 / 3 / 9 / 4; }
@@ -189,16 +200,42 @@ body{
             display: flex;
             height: 50px;
             justify-content: center;
-            align-items: center;
+            align-items: center; 
+            
+
+
         }
     .footer { grid-area: 12 / 1 / 13 / 6; }
-        .footer img{
+        .footer {
+            display: flex;
             background-color: black;
-            height: 300px;
+            height: 180px ;
         }
     .mention { grid-area: 12 / 1 / 13 / 2; }
+        .mention{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -250px;
+            margin-left: -950px;
+        }
     .accueil { grid-area: 12 / 3 / 13 / 4; }
+        .accueil{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -35px;
+
+        }
     .contact { grid-area: 12 / 5 / 13 / 6; }
+        .contact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 1000px;
+            margin-top: -45px;
+
+        }
     .bouton { grid-area: 4 / 2 / 5 / 3; }
         .bouton{
             display: flex;
@@ -209,87 +246,20 @@ body{
     
        .accueil a{ 
         text-decoration: none;
+        color: black;
+        font-weight: bolder;
        }
-    /*
-        
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(4, 2fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 15px;
-        grid-row-gap: 0px;
-        margin-top: 100px;}
+   
+       .vehicules a{
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+       }
+     
+h4{
+    color: white;
 
-    .gallery {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-        
-        .photo1 { grid-area: 3 / 1 / 4 / 2; }
-            .photo1{
-                margin-top: -500px;
-            }
-        .photo2 { grid-area: 3 / 2 / 4 / 3; }
-            .photo2{
-                margin-top: -500px;
-            }
-        .photo3 { grid-area: 3 / 3 / 4 / 4; }
-            .photo3{
-                margin-top: -500px;
-            }
-        
-       
-    .gallery2 {
-        display: grid;
-        grid-template-columns: repeat(4, 2fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 15px;
-        grid-row-gap: 0px;
-        margin-top: 100px; 
-    }
-
-
-    .gallery2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-        .photo4 { grid-area: 4 / 1 / 5 / 2; }
-    
-        .photo5 { grid-area: 4 / 2 / 5 / 3; }
-        .photo6 { grid-area: 4 / 3 / 5 / 4; }
-         
-        
-
-    .gallery3 {
-        display: grid;
-        grid-template-columns: repeat(4, 2fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        margin-top: 100px;}
-
-
-    .gallery3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        }
-      
-
-        .photo7 { grid-area: 4 / 3 / 5 / 4; }
-            .photo7{
-                margin-top: 200px;
-            }
-        .photo8 { grid-area: 5 / 1 / 6 / 2; }
-
-*/
+}
 
 
 
-
-      
