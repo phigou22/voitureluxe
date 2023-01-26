@@ -202,7 +202,7 @@ body{
     .bouton { grid-area: 4 / 2 / 5 / 3; }
         .bouton{
             display: flex;
-            margin-top: -50px;
+            margin-top: 0px;
             justify-content: space-around;
              }
   
