@@ -21,6 +21,7 @@ p{
     justify-content: center;
     margin-left: 150px;
     margin-right: 150px;
+    margin-top: -50px;
     
 }
 
@@ -58,57 +59,43 @@ p{
 
         }
        
-        img {
-         max-width: 100%;
+        .slider{
+            width: 500px;
+            overflow: hidden;
+            margin: 150px auto;
+            margin-top: -1150px;
         }
-        .slider-container {
-        max-width: 780px;
-        position:relative;
-        margin:auto;
-        height: 350px;
-        overflow: hidden;
-        margin-top: -1150px;
-        display: flex;
-
+        
+        .slides{
+            width: calc(500px * 3);
+            height: 330px;
+            animation: glisse 20s infinite;
         }
-        .menu {
-        position: absolute;
-        left: 0;
-        z-index: 11;
-        width: 100%;
-        bottom: 0;
-        text-align: center;
+        
+        .slide{
+            float: left;
         }
-        .menu label {
-        cursor: pointer;
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background: #ccc;
-        border-radius: 50px;
-        margin: 0 0.2em 1em;
+        
+        @keyframes glisse {
+            0% {
+                transform: translateX(0);
+            }
+            10% {
+                transform: translateX(0);
+            }
+            33% { transform: translateX(-500px);
+            }
+            43%{
+                transform: translateX(-500px);
+            }
+            66% { transform: translateX(-1000px);
+            }
+            76%{
+                transform: translateX(-1000px);
+            }
+            100% { transform: translateX(0);
+            }
         }
-        .menu label:hover,.menu label:focus {
-        background: #1C87C9;
-        }
-        .slide-input{
-        opacity: 0;
-        }
-        .slide-img {
-        width: 100%;
-        height: 300px;
-        position: absolute;
-        top: 0;
-        left: 100%;
-        z-index: 10;
-        transition: left 0s 0.75s;
-        }
-        [id^="slide"]:checked + .slide-img {
-        left: 0;
-        z-index: 100;
-        transition: left 0.65s ease-out;
-        }
-
 
     .photo1 { grid-area: 8 / 2 / 9 / 3; }
         .photo1 img{
@@ -213,6 +200,7 @@ p{
             display: flex;
             background-color: black;
             height: 300px ;
+            margin-top: 500px;
         }
     .mention { grid-area: 12 / 1 / 13 / 2; }
         .mention{
@@ -265,13 +253,15 @@ p{
 .formulaire{
     display: flex;
     background-color: aliceblue;
-   
-    top: 100%;
-
+    width: 500px;
+    top: 50%;
+    margin-left: 30%;
+    margin-top: 10%;
 }
 
 form{
     padding: 30px;
+    
 }
 
 form h1{
@@ -279,7 +269,7 @@ form h1{
 }
 
 form .séparation{
-    width: 50%;
+    width: 100%;
     height: 1px;
     background-color: black ;
 }
@@ -287,4 +277,73 @@ form .corp-formaulaire{
     display: flex;
     flex: wrap;
     margin-bottom: 30px;
+    
 }
+
+form .corp-formaulaire .boite{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .corp-formaulaire .gauche .boite input{
+
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9;
+    outline-color: #747cdf;
+    border-radius: 5px;
+}
+
+form .corp-formaulaire .gauche .boite i{
+
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 9px 8px;
+}
+
+form .corp-formaulaire .droite{
+    margin-left: 40px;
+}
+
+form .corp-formaulaire .droite .boite{
+    height: 100%;
+}
+
+form .corp-formaulaire .droite .boite textarea{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid #747cdf;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 80%;
+}
+
+form .pied-formulaire button{
+    margin-top: 10px;
+    background-color: #747cdf;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+form .pied-formulaire button:hover{
+    transform: scale(1.05);
+}
+
+@media screen and(max-width:920px) {
+    form .corp-formaulaire .droite{
+        margin-left: 0px;
+    }
+}
+
+
